@@ -16,10 +16,11 @@
 
 # Inherit from grouper device
 $(call inherit-product, device/asus/grouper/device.mk)
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-PRODUCT_NAME   := aosp_grouper
+# Inherit Cosmic stuff
+$(call inherit-product, vendor/cos/common.mk)
+
+PRODUCT_NAME   := cos_grouper
 PRODUCT_DEVICE := grouper
 PRODUCT_BRAND  := Google
 PRODUCT_MODEL  := Nexus 7
