@@ -130,7 +130,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fsck.f2fs \
     mkfs.f2fs \
+    mkf2fsuserimg.sh \
     e2fsck
+
+TARGET_USERIMAGES_USE_F2FS := true
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
